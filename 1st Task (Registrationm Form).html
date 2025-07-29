@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Registration Form</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #ebfcfd;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container {
+            background-color: rgb(211, 243, 253);
+            padding: 30px;
+            border-radius: 10px;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2,h4 {
+            text-align: center;
+            color: #161616;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .form-label {
+            color: #222222;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Shopping Registration Form</h2>
+        <form>
+
+            <div class="row mt-4">
+                <div class="mb-3 col-md-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="dob" class="form-label">Date of Birth</label>
+                    <input type="date" id="dob" class="form-control" required>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select id="gender" class="form-select" required>
+                        <option value="">Select gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="orders" class="form-label">Number of Previous Orders</label>
+                    <input type="number" id="orders" class="form-control" placeholder="e.g. 3">
+                </div>
+            </div>
+
+            <b><h4 class="mb-3">Delivery Address</h4></b>
+
+            <div class="row">
+                <div class="mb-3 col-md-12">
+                    <label for="street" class="form-label">Street Address</label>
+                    <input type="text" id="street" class="form-control" placeholder="Enter your address" required>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" id="city" class="form-control" placeholder="Enter your city" required>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="zipcode" class="form-label">Zip Code</label>
+                    <input type="text" id="zipcode" class="form-control" placeholder="Enter zip code" required>
+                </div>
+            </div>
+           
+
+            <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-primary">
+                <i class="bi bi-person-plus"></i> Register
+</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
